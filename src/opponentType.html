@@ -1,0 +1,103 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./opponentType.css" />
+    <link rel="icon" type="image/x-icon" href="./Images/tic-tac-toe.ico">
+    <script type="text/javascript" >
+      function preventBack(){window.history.forward();}
+       setTimeout("preventBack()", 0);
+       window.onunload=function(){null};
+   </script>
+  </head>
+  <body>
+    <div class="main flex-center">
+      <div class="game-options-container">
+        <div class="top-section">
+          <div>
+            <img
+              src="./Images/gamepage_background.jpg"
+              alt="background"
+              class="tictactoe-words"
+            />
+          </div>
+          <div class="game-settings-container">
+            <div class="game-settings">
+              <img src="./Images/stop_sound.png" alt="sound" class="sound-icon" onclick="soundFunc()" title="Sound" />
+                <img
+                src="./Images/profile.png"
+                alt="profile"
+                onclick="profile()"
+                title="Profile"
+              />
+              
+      <img src="./Images/exit.png" alt="exit" onclick="login()" title="Log out"/>
+            
+            </div>
+          </div>
+        </div>
+        <div class="middle-section">
+          
+          <div class="display-contents">
+           <div class="middle-top flex-center"> <h3 class="home-page">Home Page</h3>
+            <div class="welcome-display">
+             <span> Hi&nbsp <span class="welcome-display-text"></span> , Welcome to Tic Tac Toe</span>
+            </div>
+            </div>
+            
+            <div class="opponent-type flex-center">
+              <p class="opponent-type-text">Choose your opponent type</p>
+            </div>
+          </div>
+          <div class="choose-opponent">
+            <div class="person-person" onclick="userToUser()">
+              <figure class="fig1">
+                <img
+                  src="./Images/person.jpg"
+                  alt="person"
+                  class="person-icon"
+                />
+                <figcaption class="person-text1">Person</figcaption>
+              </figure>
+              <p class="vs-msg">VS</p>
+              <figure class="fig2">
+                <img
+                  src="./Images/person.jpg"
+                  alt="person"
+                  class="person-icon"
+                />
+                <figcaption class="person-text2">Person</figcaption>
+              </figure>
+            </div>
+            <div class="person-computer" onclick="userToPc()">
+              <figure class="fig1">
+                <img
+                  src="./Images/person.jpg"
+                  alt="person"
+                  class="person-icon"
+                />
+                <figcaption class="person-text1">Person</figcaption>
+              </figure>
+              <p class="vs-msg">VS</p>
+              <figure class="fig2">
+                <img
+                  src="./Images/Computer.png"
+                  alt="person"
+                  class="person-icon"
+                />
+                <figcaption class="person-text2">Computer</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-section">
+          <button class="next" onclick="next()">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./userDetails.js"></script>
+  </body>
+</html>

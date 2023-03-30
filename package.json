@@ -1,0 +1,29 @@
+{
+  "name": "aadhithya_sdlc_tictactoe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Aadhithya_SB@bitbucket.org/aadhithya-s-b/aadhithya_sdlc_tictactoe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/aadhithya-s-b/aadhithya_sdlc_tictactoe/issues"
+  },
+  "homepage": "https://bitbucket.org/aadhithya-s-b/aadhithya_sdlc_tictactoe#readme",
+  "dependencies": {
+    "connect": "^3.7.0",
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1",
+    "socket.io-client": "^4.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

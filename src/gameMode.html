@@ -1,0 +1,83 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./opponentType.css" />
+   
+    <link rel="icon" type="image/x-icon" href="./Images/tic-tac-toe.ico">
+    <script type="text/javascript" >
+      function preventBack(){window.history.forward();}
+       setTimeout("preventBack()", 0);
+       window.onunload=function(){null};
+   </script>
+  </head>
+  <body>
+    <div class="main flex-center">
+      <div class="game-options-container">
+        <div class="top-section">
+          <div>
+            <img
+              src="./Images/gamepage_background.jpg"
+              alt="background"
+              class="tictactoe-words"
+            />
+          </div>
+          <div class="game-settings-container">
+            <div class="game-settings">
+              <img src="./Images/stop_sound.png" alt="sound" class="sound-icon" onclick="soundFunc()" title="Sound" />
+                
+             <img
+                src="./Images/profile.png"
+                alt="profile"
+                onclick="profile()"
+                title="Profile"
+              />
+             
+              
+            <img src="./Images/exit.png" alt="exit" onclick="login()" title="Sign Out"/>
+            
+            </div>
+          </div>
+        </div>
+        <div class="middle-section">
+          <div class="userName-container">
+          <div class="userName"><h1 class="userName-text-content">Player: <span class="userName-text">User</span></h1></div>
+          <div class="gameModeerror"> ! Choose all the required fields</div></div>
+          <div class="game-mode-container">
+            <div class="start-first">
+              <h3 class="start-first-contents">Do you want to start first?</h3>
+              <button class="yes" onclick="yes()">Yes</button><button class="no" onclick="no()">No</button>
+            </div>
+            <div class="character">
+              <h3 class="character-contents">Choose your character</h3>
+              <img src="./Images/x-icon.png" alt="x-icon" class="x-icon" onclick="xIconClick()"/><img
+                src="./Images/o-icon.png"
+                alt="o-icon"
+                class="o-icon"
+                onclick="oIconClick()"
+              />
+            </div>
+            <div class="game-mode">
+              <h3 class="game-mode-text">Choose game difficulty</h3>
+              <div class="easy-div"><button class="easy" onclick="easyClick()">Easy</button></div>
+              <button class="medium" onclick="mediumClick()">Medium</button>
+              <button class="hard" onclick="hardClick()">Hard</button>
+            </div>
+            <div class="opponent-name">
+              <div><label for="oppt-name"><b>Opponent Name</b></label>
+                <input type="text" id="oppt-name"
+                maxlength="15"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-section">
+          <button class="back" onclick="opponentType()">Back</button>
+          <button class="next-gamemode" onclick="nextGamePage()">Next</button>
+        </div>
+      </div>
+    </div>
+    <script src="./gameMode.js  "></script>
+  </body>
+</html>

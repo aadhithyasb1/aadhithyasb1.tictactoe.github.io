@@ -1,0 +1,117 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="./Images/tic-tac-toe.ico">
+    <script type="text/javascript" >
+      function preventBack(){window.history.forward();}
+       setTimeout("preventBack()", 0);
+       window.onunload=function(){null};
+   </script>
+  </head>
+  <body>
+    <!-- Main div element -->
+    <div class="main">
+     
+      <div>
+        <img
+          src="./Images/background.jpg"
+          alt=""
+          class="background-left-side"
+        />
+      </div>
+      <div class="login-right-side">
+        <div class="lets-play">
+          <img
+            src="./Images/lets_play.png"
+            alt="lets_play_image"
+            class="login-lets-play-image"
+          />
+        </div>
+        <div class="divError">
+          <p class="error">Incorrect Username or Password
+            <img
+            src="./Images/x-icon.png"
+            alt="close"
+            class="close"
+            onclick="displayNone()"
+          />
+          </p>
+          
+        </div>
+        <form class="login-form" onsubmit="submitLogin(event)">
+          <div class="login-username-container">
+           
+            <input
+              type="text"
+              name="username"
+              placeholder="Username or Email"
+              id="id-login-username"
+              class="class-login-username form-control"
+              required=""
+              autocomplete="off" readonly 
+    onfocus="this.removeAttribute('readonly');" 
+    autofocus
+            />
+            <img
+            src="./Images/Username.png"
+            alt="Username"
+            id="username_logo"
+          />
+          </div>
+          <div class="login-password-container">
+            
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              id="id-login-password"
+              required=""
+              class="form-control"
+              
+              autocomplete="off" readonly 
+    onfocus="this.removeAttribute('readonly');"
+            />
+            <img
+              src="./Images/visible.png"
+              alt="not_visible"
+              id="not-visible-logo"
+              onclick="showPassword()"
+            />
+            <img
+              src="./Images/password.png"
+              alt="password"
+              id="password-logo"
+            />
+          </div>
+          <div class="submit-button">
+            <button type="submit" value="log in" id="id-login-submit">
+              Log in
+            </button>
+          </div>
+        </form>
+        <!-- <p class="login-forgot-password">
+          or
+          <a href="www.google.com" class="forgot-password-content"
+            >Forgot Password</a
+          >
+        </p> -->
+        <hr class="horizontal-line" />
+        <p class="login-signup">
+          Don't have an account?
+          <a href="signUp.html" class="signup-content">Sign Up</a>
+        </p>
+      </div>
+    </div>
+    <script src="./userDetails.js"></script>
+  </body>
+</html>

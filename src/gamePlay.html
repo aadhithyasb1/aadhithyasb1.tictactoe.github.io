@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./gamePlay.css">
+   
+    <link rel="icon" type="image/x-icon" href="./Images/tic-tac-toe.ico">
+    <script type="text/javascript" >
+      function preventBack(){window.history.forward();}
+       setTimeout("preventBack()", 0);
+       window.onunload=function(){null};
+   </script>
+</head>
+<body>
+    <div class="main flex-center">
+      <div class="celebration-div-left"><img src="https://media.giphy.com/media/T8S7AY8meKiBi/giphy.gif" alt="celebration" class="celebration"></div>
+      <div class="celebration-div-right"><img src="https://media.giphy.com/media/T8S7AY8meKiBi/giphy.gif" alt="celebration" class="celebration"></div>
+        <div class="game-options-container">
+          
+          <div class="middle-section">
+            <div class="game-details">
+                <div class="time-taken"><p>Time Taken: <span id="minutes">00</span>:<span id="seconds">00</span></p></div>
+                <div class="opponent-type-text"><p>Opponent Type: <span class="opponent-type"></span></p></div>
+                <div class="game-mode-text"><p>Game Mode: <span class="game-mode"></span></p></div>
+               
+                <div><img src="./Images/stop_sound.png" alt="sound" title="Sound" class="sound-icon" onclick="soundFunc()"></div>
+            </div>
+            
+            <div class="play-area">
+              
+                <div class="user">
+                    <img src="./Images/person.jpg" alt="person" class="person">
+                    <div class="user-details"><p class="player-text">Player name: <span id="player-name"></span></p>
+                    <p class="character-text">Character: <span id="character"></span></p>
+                    <p class="points-text">Points: <span id="points">0</span></p>
+                    </div>
+                    <div class="your-turn"><span>Your Turn</span></div>
+                </div>
+                
+                <div class="play-box">
+                  
+                    <div class="board" id="board">
+                      <div class="cell"></div>
+                      <div class="cell"></div>
+                      <div class="cell"></div>
+                      <div class="cell"></div>
+                      <div class="cell"></div>
+                      <div class="cell"></div>
+                      <div class="cell"></div>
+                      <div class="cell"></div>
+                      <div class="cell"></div>
+                    </div>
+                </div>
+                <div class="opponent">
+                    <img alt="person" class="opponent-icon">
+                    <div class="user-details"><p class="opponent-name-text">Opponent name: <span id="opponent-name"></span></p>
+                    <p id="opponent-character-text">Character: <span id="opponent-character"></span></p>
+               <p id="opponent-points-text">Points: <span id="opponent-points">0</span></p></div>
+               <div class="opponent-turn"><span>Opponent Turn</span></div>
+                </div>
+                
+                </div>
+            </div>
+            <div class="bottom-section">
+              <button id="stop-game"><img src="./Images/pause-solid.svg" alt="pause"  class="stop-icon" title="Pause/Play"></button>
+              <button id="reset-game"><img src="./Images/restart.png" alt="restart" class="reset-icon" title="Restart"></button>
+            </div>
+            <div class="quitGame">
+              <button class="quit-game" onclick="openQuitBox()">Quit Game</button>
+              <div class="quitYesOrNo"><div class="quit-content">Do you want to quit the game?</div>
+              <div class="yes-no"><button class="yes" onclick="opponentType()">Yes</button><button class="no"
+                 onclick="closeQuitBox()">No</button></div></div>
+            </div>
+            <div class="result"><p class="result-content">Result: Aadhi wins</p>
+            <div class="resultButton"><button class="continue" onclick="closeResult()">Play again</button>
+              <button class="exit" onclick="opponentType()">Home</button>
+            </div>
+            </div>
+            
+            <!-- <div class="bottom-section">
+              <button class="back" onclick="gameMode()">Back</button>
+            </div> -->
+          </div>
+        </div>
+       
+    </div>
+      <script src="./gamePlay.js"></script>
+</body>
+</html>

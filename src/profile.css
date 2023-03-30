@@ -1,0 +1,492 @@
+body {
+  background-image: url("./Images//main_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.main {
+  height: 100%;
+  width: 100%;
+}
+.game-options-container {
+  background-color: aliceblue;
+  background-image: url("./Images/background_plus_minus.png");
+  border-radius: 40px;
+  height: 90%;
+  width: 90%;
+  
+}
+.top-section {
+  background-color: #1b4465;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 15%;
+  width: 100%;
+}
+.tictactoe-words {
+  height: 65%;
+  width: 100%;
+}
+.game-settings-container {
+  display: flex;
+  justify-content: center;
+}
+.game-settings {
+  background-color: white;
+  height: 53%;
+  margin-top: 10px;
+  text-align: center;
+  width: 95%;
+}
+.game-settings img {
+  padding: 20px 50px;
+  width: 45px;
+  cursor: pointer;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 15% 35% 50%;
+  grid-template-rows: 100%;
+  margin-top: 45px;
+}
+
+.person-icon {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 140px;
+  margin-right: 0;
+}
+.edit-profile {
+  background-color: lightgray;
+  border-radius: 20px;
+  height: 30px;
+  padding-top: 5px;
+  text-align: center;
+  width: 150px;
+}
+.person {
+  margin-left: 0px;
+}
+.user-details {
+  background-color: #23255d;
+  border-radius: 30px;
+  color: #c1ff72;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.user-name-text, .email-text{
+color: white;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+.user-name, .email{
+  color: #c1ff72;
+}
+.points-details {
+  background-color: #e1e2ff;
+  border-radius: 20px;
+  color: #0097b2;
+  font-size: 23px;
+  margin-left: 50px;
+  width: 600px;
+  border: 2px solid black;
+}
+.row1,
+.row2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  
+}
+.row2{
+  border-top: 2px solid black;
+}
+.row1 p {
+  margin-right: 90px;
+ 
+}
+.column1, .column2{
+  border-right: 2px solid black;
+}
+.row2 p {
+  width: 150px;
+  padding-right: 40px;
+  margin-left: 75px;
+  
+}
+.draw-text{
+  margin-right: 40px;
+}
+.lost-text, .game-won-text, .draw-text, .game-played-text{
+  color: black;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.lost, .game-won, .draw, .game-played{
+  color: blue;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 2px solid black;
+  text-align: center;
+  height: 60px;
+}
+.history-table {
+  color: #0097b2;
+  font-size: 20px;
+  height: 25%;
+  margin-top: 30px;
+  width: 90%;
+}
+.history {
+  margin-top: 20px;
+  margin-left: 60px;
+  
+}
+.history-text{
+  background-color: gray;
+  border-radius: 20px;
+  color: black;
+  height: 30px;
+  margin-top: 15px;
+  padding-top: 5px;
+  text-align: center;
+  width: 190px;
+  cursor: pointer;
+font-size: 18px;
+margin-left: 30px;
+}
+.last-history-text{
+  background-color: gray;
+  border-radius: 20px;
+  color: black;
+  height: 30px;
+  margin-top: 35px;
+  padding: 5px;
+  text-align: center;
+  width: 190px;
+  background-color: #23255d;
+  color: #c1ff72;
+  cursor: pointer;
+  font-size: 18px;
+  border: 2px solid black;
+}
+.history-text.show{
+  background-color: #23255d;
+  color: #c1ff72;
+  
+}
+
+
+.full-history-table{
+  margin-left: 60px;
+  width:90%;
+
+}
+
+.profile{
+  width: 100px;
+  height: 40px;
+  margin: 0px 120px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 45%;
+  background-color: purple;
+  color: white;
+}
+.full-history{
+
+  display: none;
+}
+.full-history-div{
+  margin-top: 30px;
+  height: 65%;
+  overflow-y: scroll;
+  margin-bottom: 30px;
+}
+.replay-section{
+  display: none;
+}
+.play-area {
+
+  grid-template-columns: 25% 45% 25%;
+  margin-left: 20px;
+  margin-top: 10px;
+
+}
+.user, .opponent{
+  display: grid;
+  justify-content: center;
+  height: 400px;
+  width: 350px;
+}
+
+.user.show,.opponent.show{
+  background-color: rgb(205, 199, 199);
+  border-radius: 20px;
+}
+.your-turn, .opponent-turn{
+  margin: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.play-area.show{
+  display: grid;
+}
+.person , .opponent-icon{
+  width: 170px;
+  margin-left: 75px;
+}
+.user-details {
+  background-color: #1b4465;
+  width: 250px;
+  height: 150px;
+  border-radius: 20px;
+  padding: 20px 10px;
+  font-size: 23px;
+  margin-left: 30px;
+  border: 2px solid black;
+
+}
+.user-details-container{
+  background-color: #1b4465;
+  width: 450px;
+  height: 150px;
+  border-radius: 20px;
+  padding: 20px 10px;
+  font-size: 23px;
+  margin-left: 30px;
+  border: 2px solid black;
+}
+.board{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3,auto);
+  justify-items: center;
+  align-items: center;
+}
+.play-box{
+ 
+ margin-top: 30px;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: center;
+}
+.back {
+  background-color: #410c73;
+  border-radius: 30px;
+  color: white;
+  font-size: 25px;
+  height: 50px;
+  margin-bottom: 60px;
+  margin-right: 7%;
+  width: 140px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.quit-game{
+  background-color: red;
+  width: 200px;
+  height: 40px;
+  font-size: 23px;
+  text-align: center;
+ left:60px;
+  top:10px;
+  cursor: pointer;
+}
+.quitGame{
+  position: relative;
+}
+.quitYesOrNo{
+  position: absolute;
+  top:-25px;
+  width: 240px;
+  height: 90px;
+  left: -80px;
+  background-color: lightcoral;
+  padding: 20px;
+  display: none;
+  margin-left: 80px;
+}
+.yes-no{
+  display: flex;
+  justify-content: center;
+}
+.yes,.no{
+  margin: 0px 40px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.main{
+  position: relative;
+}
+.result{
+  display: none;
+  position: fixed;
+  top:0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: black;
+  opacity: 0.9;
+  font-size: 35px;
+  color: #c1ff72;
+  justify-content: center;
+  align-content: center;
+  grid-template-rows: 80px 80px;
+}
+.result.show{
+  display: grid;
+}
+.continue, .exit{
+  font-size: 20px;
+  margin-left: 15px;
+  background-color: lightblue;
+}
+
+.opponentDetails{
+  margin-top: 20px;
+}
+/*  */
+:root {
+  --cell-size: 120px;
+  --mark-size: calc(var(--cell-size) * .7);
+}
+
+.cell {
+  width: var(--cell-size);
+  height: var(--cell-size);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.cell.X,
+.cell.O {
+  cursor: not-allowed;
+  background-color: lightblue;
+}
+
+.cell.X::before,
+.cell.X::after,
+.cell.O::before {
+  background-color: black;
+}
+
+.board.X .cell:not(.X):not(.O):hover::before,
+.board.X .cell:not(.X):not(.O):hover::after,
+.board.O .cell:not(.X):not(.O):hover::before {
+  background-color: lightgrey;
+}
+
+.cell.X::before,
+.cell.X::after,
+.board.X .cell:not(.X):not(.O):hover::before,
+.board.X .cell:not(.X):not(.O):hover::after {
+  content: '';
+  position: absolute;
+  width: calc(var(--mark-size) * .15);
+  height: var(--mark-size);
+}
+
+.cell.X::before,
+.board.X .cell:not(.X):not(.O):hover::before {
+  transform: rotate(45deg);
+}
+
+.cell.X::after,
+.board.X .cell:not(.X):not(.O):hover::after {
+  transform: rotate(-45deg);
+}
+
+.cell.O::before,
+.cell.O::after,
+.board.O .cell:not(.X):not(.O):hover::before,
+.board.O .cell:not(.X):not(.O):hover::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.cell.O::before,
+.board.O .cell:not(.X):not(.O):hover::before {
+  width: var(--mark-size);
+  height: var(--mark-size);
+}
+
+.cell.O::after,
+.board.O .cell:not(.X):not(.O):hover::after {
+  width: calc(var(--mark-size) * .7);
+  height: calc(var(--mark-size) * .7);
+  background-color: lightblue;
+}
+
+.game-details{
+  margin-left: 70px;
+  font-size: 23px;
+  margin-top: 30px;
+  display: flex;
+  
+
+
+  /* display: grid;
+  grid-template-columns: 20% 10% 20% 50% ; */
+}
+.opponent-type{
+  margin-bottom: 20px;
+}
+.control{
+ margin-left: 100px;
+ margin-top: 20px;
+}
+.play,.pause,.replay-history{
+  width: 30px;
+  height: 40px;
+  margin: 5px;
+  cursor: pointer;
+}
+.replay-history{
+  width: 40px;
+  margin-left: 15px;
+}
+.result-replay{
+  margin-left: 150px;
+  font-size: 25px;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  border-radius: 30px;
+  width: 400px;
+  padding-top: 27px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  display: none;
+}
+.profile-replay-button{
+  border-radius: 20px;
+  background-color: purple;
+  color: white;
+  margin-left: 130px;
+  font-size: 25px;
+  height: 40px;
+  width: 100px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+.replay-button{
+width: 30px;
+cursor: pointer;
+}

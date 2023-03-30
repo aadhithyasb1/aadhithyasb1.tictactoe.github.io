@@ -1,0 +1,183 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./profile.css" />
+
+    <link rel="icon" type="image/x-icon" href="./Images/tic-tac-toe.ico" />
+  </head>
+  <body>
+    <div class="main flex-center">
+      <div class="game-options-container">
+        <div class="top-section">
+          <div>
+            <img
+              src="./Images/gamepage_background.jpg"
+              alt="background"
+              class="tictactoe-words"
+            />
+          </div>
+          <div class="game-settings-container">
+            <div class="game-settings">
+              <img
+                src="./Images/home.png"
+                alt="home"
+                onclick="opponentType()"
+                title="Home"
+              />
+              <img
+                src="./Images/stop_sound.png"
+                alt="sound"
+                class="sound-icon"
+                onclick="soundFunc()"
+                title="Sound"
+              />
+              <img src="./Images/exit.png" alt="exit" onclick="login()" title="Sign Out" />
+            </div>
+          </div>
+        </div>
+        <div class="middle-section">
+          <div class="profile-content">
+            <div class="person-container">
+              <img src="./Images/person.jpg" alt="person" class="person-icon" />
+            </div>
+            <div class="user-details-container">
+              <p class="user-name-text">
+                User Name: <span class="user-name"> Aadhi</span>
+              </p>
+              <p class="email-text">
+                Email id: <span class="email">aadhi@gmail.com</span>
+              </p>
+            </div>
+            <div class="points-details">
+              <div class="row1">
+                <div class="column1">
+                  <p class="game-played-text">
+                    Game Played: <span class="game-played">1</span>
+                  </p>
+                </div>
+                <p class="game-won-text">
+                  Game won: <span class="game-won"></span>
+                </p>
+              </div>
+              <div class="row2">
+                <div class="column2">
+                  <p class="lost-text">Lost: <span class="lost"></span></p>
+                </div>
+                <p class="draw-text">Draw: <span class="draw"></span></p>
+              </div>
+            </div>
+          </div>
+          <div class="history">
+            <div class="history-div">
+              <button class="last-history-text" onclick="lastHistory()">
+                Last Game History
+              </button>
+              <button class="history-text" onclick="history()">
+                View Full history
+              </button>
+            </div>
+            <table class="history-table">
+              <tr>
+                <th>Opponent Name</th>
+                <th>Game Status</th>
+                <th>Time taken</th>
+                <th>Game mode</th>
+                <th>Replay</th>
+              </tr>
+              <tr>
+                <td class="Opponent-name">PC</td>
+                <td class="won-status">Won</td>
+                <td class="time-taken">1:15</td>
+                <td class="game-mode">Easy</td>
+                <td class="replay">
+                  <img
+                    src="./Images/circle-play-regular.svg"
+                    alt="play"
+                    onclick="replayFunc()"
+                    class="replay-button"
+                  />
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="full-history">
+          <div class="full-history-div">
+            <table class="full-history-table"></table>
+          </div>
+          <button class="profile" onclick="profile()">Back</button>
+        </div>
+        <div class="replay-section">
+          <div class="play-area">
+            <div class="user">
+              <img src="./Images/person.jpg" alt="person" class="person" />
+              <div class="user-details">
+                <p id="player-name">Player name:</p>
+                <p id="character">Character: X</p>
+                <p id="points">Points: 0</p>
+              </div>
+              <div class="your-turn"><span>Your Turn</span></div>
+            </div>
+            <div class="play-box">
+              <div class="board" id="board">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+              </div>
+            </div>
+            <div class="opponent">
+              <img alt="person" class="opponent-icon" />
+              <div class="user-details">
+                <p id="opponent-name">Opponent name: PC</p>
+                <p id="opponent-character">Character: O</p>
+                <p id="opponent-points">Points: 0</p>
+              </div>
+              <div class="opponent-turn"><span>Opponent Turn</span></div>
+            </div>
+          </div>
+          <div class="game-details">
+            <div class="opponentDetails">
+              <div class="opponent-type">Opponent Type: PC</div>
+              <div class="game-mode-history">Game Mode : Easy</div>
+            </div>
+            <div class="profile-replay">
+              <button class="profile-replay-button" onclick="profile()">
+                Back
+              </button>
+            </div>
+
+            <div class="control">
+             
+              <img
+            
+                class="pause"
+                src="./Images/pause-solid.svg"
+                alt="pause"
+                onclick="pause()"
+                title="Play/Pause"
+              />
+              <img
+                src="./Images/reply-solid.svg"
+                alt="replay"
+                class="replay-history"
+                onclick="replayHistory()"
+                title="Replay"
+              />
+            </div>
+            <div class="result-replay"><p class="result-text"></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./profile.js"></script>
+  </body>
+</html>

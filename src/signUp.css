@@ -1,0 +1,104 @@
+body {
+  background-image: url("./Images/main_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+.signup-form {
+  background-color: aliceblue;
+  background-image: url("Images/background_plus_minus.png");
+  border-radius: 5%;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 60px 60px 60px 60px 70px 40px;
+  height: 650px;
+  justify-content: center;
+  margin-top: 40px;
+  row-gap: 40px;
+  width: 660px;
+}
+.signup-content {
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+#signup-username-input,
+#signup-email-input,
+#signup-password-input,
+#signup-confirm-password-input {
+  background-color: rgb(211, 208, 208);
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 25px;
+  height: 70px;
+  opacity: 0.7;
+  padding: 20px;
+  width: 100%;
+  color: black;
+}
+.signup-password-container,
+.signup-confirm-password-container {
+  position: relative;
+}
+
+#not-visible-logo,
+#not-visible-logo-confirm {
+  position: absolute;
+  right: 27px;
+  top: 13px;
+  width: 50px;
+  opacity: 0.6;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+}
+#signup-submit {
+  background: royalblue;
+  border-radius: 25px;
+  color: aliceblue;
+  font-size: 25px;
+  font-weight: bold;
+  height: 45px;
+  width: 160px;
+}
+
+.signup-login {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin: 0px;
+}
+.signup-error {
+  background-color: rgb(246, 175, 175);
+
+  border: 2px solid red;
+
+  display: none;
+  height: 40px;
+  margin-left: 70px;
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+  width: 300px;
+}
+.signup-error.show {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  color: white;
+  border: 2px solid black;
+}
+.signup-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.signup-close {
+  position: absolute;
+  right: 14px;
+  top: 13px;
+  width: 11px;
+}

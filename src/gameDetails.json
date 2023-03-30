@@ -1,0 +1,62 @@
+{
+  "nithin": {
+    "opponentSelectedData": "pvspc",
+    "startFirstdata": "Yes",
+    "characterData": "X",
+    "modeSelectedData": "Easy"
+  },
+  "aadhi": {
+    "opponentSelectedData": "pvsp",
+    "startFirstdata": "Yes",
+    "characterData": "X",
+    "modeSelectedData": ""
+  },
+  "Annie": {
+    "opponentSelectedData": "pvsp",
+    "startFirstdata": "yes",
+    "characterData": "x",
+    "modeSelectedData": ""
+  },
+  "null": {
+    "opponentSelectedData": "pvspc",
+    "startFirstdata": "Yes",
+    "characterData": "X",
+    "modeSelectedData": "Medium"
+  },
+  "asdfgh": {
+    "opponentSelectedData": "pvspc",
+    "startFirstdata": "Yes",
+    "characterData": "X",
+    "modeSelectedData": "Hard"
+  },
+  "PriyaPuppy": {
+    "opponentSelectedData": "pvsp",
+    "startFirstdata": "Yes",
+    "characterData": "O",
+    "modeSelectedData": ""
+  },
+  "Barath": {
+    "opponentSelectedData": "pvspc",
+    "startFirstdata": "Yes",
+    "characterData": "X",
+    "modeSelectedData": "Hard"
+  },
+  "aadhit": {
+    "opponentSelectedData": "pvsp",
+    "startFirstdata": "Yes",
+    "characterData": "X",
+    "modeSelectedData": ""
+  },
+  "aad": {
+    "opponentSelectedData": "pvspc",
+    "startFirstdata": "Yes",
+    "characterData": "X",
+    "modeSelectedData": "Easy"
+  },
+  "karthi": {
+    "opponentSelectedData": "pvspc",
+    "startFirstdata": "Yes",
+    "characterData": "X",
+    "modeSelectedData": "Easy"
+  }
+}
